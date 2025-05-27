@@ -1,0 +1,46 @@
+<!-- JavaScript Test Snippets -->
+<!-- Copy and paste these into your Moodle HTML editor one at a time -->
+
+<!-- Test J001: Basic script alert -->
+<script>
+alert('Hello from Moodle JavaScript test!');
+</script>
+<p>JavaScript alert test - check if alert appeared</p>
+
+<!-- Test J002: Button with onclick event -->
+<button onclick="alert('Button clicked!')">Click me - JavaScript test</button>
+
+<!-- Test J003: DOM manipulation -->
+<div id="test-div">Original text</div>
+<button onclick="document.getElementById('test-div').innerHTML = 'Text changed by JavaScript!'">
+    Change text above
+</button>
+
+<!-- Test J004: Console log test -->
+<script>
+console.log('Moodle JavaScript console test');
+</script>
+<p>Console log test - check browser console for message</p>
+
+<!-- Test J005: Interactive form -->
+<input type="text" id="user-input" placeholder="Type something...">
+<button onclick="
+    var input = document.getElementById('user-input').value;
+    alert('You typed: ' + input);
+">Show what I typed</button>
+
+<!-- Test J006: Timer/delay function -->
+<button onclick="
+    setTimeout(function() {
+        alert('Delayed message after 2 seconds!');
+    }, 2000);
+">Start 2-second timer</button>
+
+<!-- Test J007: CSS manipulation via JavaScript -->
+<div id="color-div" style="padding: 10px; background-color: lightblue;">
+    Click button to change my color
+</div>
+<button onclick="
+    var div = document.getElementById('color-div');
+    div.style.backgroundColor = div.style.backgroundColor === 'lightblue' ? 'lightcoral' : 'lightblue';
+">Toggle color</button> 

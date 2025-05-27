@@ -1,0 +1,64 @@
+# Moodle Front-End Testing Project - .gitignore
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary files
+*.tmp
+*.temp
+
+# Screenshots that might contain sensitive info
+# (Keep results/screenshots/ but exclude any with sensitive data)
+**/sensitive-*
+**/private-*
+
+# Local environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Node modules (if we add any automation)
+node_modules/
+npm-debug.log*
+
+# Backup files
+*.bak
+*.backup
+
+# Test outputs that might contain sensitive data
+**/test-output-sensitive*
+**/moodle-credentials*
+
+# Any files with actual Moodle URLs or credentials
+**/config-local*
+**/credentials* 

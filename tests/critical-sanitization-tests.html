@@ -1,0 +1,59 @@
+<!-- CRITICAL SANITIZATION TESTS -->
+<!-- Copy each test individually into Moodle, save, and document the results -->
+
+<!-- TEST 1: Font-Weight Normalization -->
+<h3>Test 1: Font-Weight Values</h3>
+<div style="font-weight: 700; background: lightblue; padding: 10px; margin: 5px;">Font-weight: 700 (should become bold?)</div>
+<div style="font-weight: bold; background: lightgreen; padding: 10px; margin: 5px;">Font-weight: bold (should stay bold)</div>
+<div style="font-weight: 600; background: lightyellow; padding: 10px; margin: 5px;">Font-weight: 600 (what happens?)</div>
+
+<!-- TEST 2: Color Value Normalization -->
+<h3>Test 2: Color Values</h3>
+<div style="color: #ff0000; background: white; padding: 10px; margin: 5px;">Color: #ff0000 (hex red)</div>
+<div style="color: red; background: white; padding: 10px; margin: 5px;">Color: red (keyword)</div>
+<div style="color: rgb(255, 0, 0); background: white; padding: 10px; margin: 5px;">Color: rgb(255, 0, 0)</div>
+
+<!-- TEST 3: Complex CSS Properties -->
+<h3>Test 3: Complex Properties</h3>
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; margin: 5px; color: white;">Linear gradient background</div>
+<div style="box-shadow: 0px 8px 25px rgba(102, 126, 234, 0.3); padding: 20px; margin: 5px; background: white;">Box shadow with rgba</div>
+<div style="border-radius: 20px; background: orange; padding: 15px; margin: 5px;">Border radius 20px</div>
+
+<!-- TEST 4: HTML Structure with Comments -->
+<h3>Test 4: HTML Structure</h3>
+<!-- This is a test comment -->
+<div style="background: lightcoral; padding: 15px;">
+    <!-- Nested comment -->
+    <p style="margin: 0;">Content with comments above and inline</p>
+</div>
+<!-- End comment -->
+
+<!-- TEST 5: Modern CSS (Flexbox) -->
+<h3>Test 5: Modern CSS</h3>
+<div style="display: flex; justify-content: space-between; background: lightsteelblue; padding: 15px; margin: 5px;">
+    <div style="background: white; padding: 10px;">Flex item 1</div>
+    <div style="background: white; padding: 10px;">Flex item 2</div>
+</div>
+
+<!-- INSTRUCTIONS FOR USER -->
+<!-- 
+TESTING INSTRUCTIONS:
+1. Copy ONE test at a time into your Moodle page
+2. Save the page
+3. Go back and edit the page to see what changed
+4. Document the before/after code
+5. Take a screenshot of how it looks
+6. Move to the next test
+
+WHAT TO LOOK FOR:
+- Did font-weight: 700 become font-weight: bold?
+- Did color values change format?
+- Were comments removed?
+- Did complex CSS properties survive?
+- Does the visual layout still work?
+
+REPORT BACK:
+- Which tests broke visually?
+- What specific code changes occurred?
+- Any patterns in what gets modified?
+--> 

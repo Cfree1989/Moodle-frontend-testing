@@ -1,0 +1,117 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Moodle Front-End Coding Discovery Project
+
+## Objective
+This exploratory project aims to define the capabilities and limitations of LSU’s Moodle platform for front-end customization. The goal is to push boundaries through structured testing using HTML, CSS, and JavaScript inside Moodle content blocks (e.g., Labels, Pages). The final output will be a verified, reusable reference guide that outlines what is allowed, stripped, or altered by Moodle’s backend systems.
+
+---
+
+## Scope
+- Experiment with a variety of front-end features and UI patterns
+- Identify which HTML/CSS/JS elements are preserved, sanitized, or blocked
+- Document Moodle's behavior around rendering, sanitization, and interactivity
+- Establish reusable and accessible design patterns for Moodle course building
+
+---
+
+## Deliverables
+- A categorized table of **Allowed**, **Stripped**, and **Modified** elements
+- Screenshots and annotated test results for each behavior
+- A reusable reference sheet of “safe” HTML/CSS/JS patterns
+- Notes on Moodle’s sanitization rules, theme overrides, and behavior across content types
+
+---
+
+## Guidelines
+- Assume the role of a Moodle **course builder or instructor**
+- Use **Cursor** to write, test, and document experiments within Moodle’s HTML editor
+- Use the **Test Log Template** (see below) for each experiment
+- Keep tests modular, accessible, and non-destructive
+- Do not attempt to bypass Moodle’s security filters or exploit vulnerabilities
+
+---
+
+## Test Log Template
+
+For each tested element, complete the following table format:
+
+| Test Category | Feature | Code Snippet | Result | Rendered As | Notes/Screenshot Link |
+|---------------|---------|--------------|--------|-------------|------------------------|
+| HTML | `<iframe>` embed | `<iframe src="...">` | Modified | Empty iframe | Moodle strips external embeds |
+
+---
+
+## Testing Categories
+
+### 1. HTML Capabilities (Basic–Intermediate)
+- [ ] Test semantic structure: `<div>`, `<section>`, `<article>`, `<nav>`
+- [ ] Add custom `data-*` attributes
+- [ ] Test form inputs: `<input>`, `<label>`, `<select>`
+- [ ] Embed `<iframe>` (YouTube, SharePoint, etc.)
+- [ ] Test media: `<audio>`, `<video>`, `<svg>`, `<canvas>`
+
+---
+
+### 2. CSS & Styling Behavior (Basic–Advanced)
+- [ ] Inline `style=""` attributes
+- [ ] `<style>` blocks within content
+- [ ] Linking to external CSS files
+- [ ] Tailwind CSS (compiled class support)
+- [ ] Bootstrap grid/utilities
+- [ ] CSS animations/transitions
+- [ ] Google Fonts / `@font-face` usage
+
+---
+
+### 3. JavaScript Execution (Intermediate–Advanced)
+- [ ] Inline `<script>` blocks
+- [ ] External JS libraries: Alpine.js, jQuery
+- [ ] DOM events: `onclick`, `onchange`, `onhover`
+- [ ] DOM manipulation: `document.querySelector`, etc.
+- [ ] Basic interactive components: tabs, accordions, modals
+- [ ] Script stripping/sanitization observations
+
+---
+
+### 4. Markdown & Formatting Tests (Basic–Intermediate)
+- [ ] Markdown syntax: headings, bold, lists
+- [ ] `<pre><code class="language-python">...</code></pre>` blocks
+- [ ] Math equations: LaTeX / MathJax
+- [ ] Raw JSON or `<template>` tag support
+
+---
+
+### 5. Security & Sanitization Boundaries (Advanced – Use Caution)
+- [ ] Attempt common JS injection patterns (e.g., `<script>alert()`)
+- [ ] `<meta>`, `<base>`, `<object>`, `<embed>`, `<applet>` behavior
+- [ ] External `<link>` or `<script>` tag injection
+- [ ] Document what gets blocked, stripped, or modified
+- ❗ *Important: Do not attempt malicious exploitation or backend access*
+
+---
+
+### 6. Moodle-Specific Features (Intermediate)
+- [ ] Use Moodle’s Bootstrap grid (`.container`, `.row`, `.col-*`)
+- [ ] Theme-specific class behavior
+- [ ] Test if theme overrides persist after editing
+- [ ] HTML inside SCORM or H5P modules
+- [ ] Attempt interaction with Moodle core libraries (`requirejs`, etc.)
+
+---
+
+## Notes
+- Prioritize elements available to instructors/course designers (no admin access required)
+- Where relevant, include a screenshot or short video for reference
+- Try to group findings by category or pattern (e.g., “Media Embeds”)
+- If a result is inconsistent, rerun the test in a new page and document the variation
+
+---
+
+## Attribution
+*Maintained by: [Your Name / Lab Team]  
+Created: [Insert Date]  
+Last Updated: [Insert Date]*

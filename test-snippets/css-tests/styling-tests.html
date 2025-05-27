@@ -1,0 +1,49 @@
+<!-- CSS Styling Test Snippets -->
+<!-- Copy and paste these into your Moodle HTML editor one at a time -->
+
+<!-- Test C001: Basic inline styles -->
+<p style="color: blue; font-size: 20px; font-weight: bold;">Blue text with inline styles</p>
+
+<!-- Test C002: Style block test -->
+<style>
+.test-class {
+    background-color: yellow;
+    padding: 15px;
+    border-radius: 5px;
+}
+</style>
+<div class="test-class">Div with style block styling</div>
+
+<!-- Test C003: Complex CSS properties -->
+<div style="
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    color: white;
+">
+    Complex styled div with gradient and shadow
+</div>
+
+<!-- Test C004: CSS animations -->
+<style>
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-100px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+.animated-div {
+    animation: slideIn 2s ease-in-out;
+    background-color: lightgreen;
+    padding: 10px;
+}
+</style>
+<div class="animated-div">Animated sliding div</div>
+
+<!-- Test C005: Bootstrap-style classes -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" style="background-color: #f8f9fa; padding: 10px;">Column 1</div>
+        <div class="col-md-6" style="background-color: #e9ecef; padding: 10px;">Column 2</div>
+    </div>
+</div> 
