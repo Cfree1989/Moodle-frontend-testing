@@ -1,14 +1,14 @@
 # Moodle Sanitization Test Results
 
 **Phase 1 Completion Status**: ✅ **COMPLETED**  
-**Testing Date**: December 2024  
+**Testing Date**: May 24, 2025  
 **Document Type**: Detailed Test Results  
 **Related Files**: `critical-sanitization-tests.html`, `sanitization-tests.md`  
 
 ## Test Execution Log
 
 ### Test 1: Font-Weight Normalization
-**Date**: [Current Date]
+**Date**: May 24, 2025
 **Input Code**:
 ```html
 <div style="font-weight: 700; background: lightblue; padding: 10px; margin: 5px;">Font-weight: 700</div>
@@ -37,7 +37,7 @@
 ---
 
 ### Test 2: Color Value Normalization
-**Date**: [Current Date]
+**Date**: May 24, 2025
 **Input Code**:
 ```html
 <div style="color: #ff0000; background: white; padding: 10px; margin: 5px;">Color: #ff0000 (hex red)</div>
@@ -64,7 +64,7 @@
 ---
 
 ### Test 3: Complex CSS Properties
-**Date**: [Current Date]
+**Date**: May 24, 2025
 **Input Code**:
 ```html
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; margin: 5px; color: white;">Linear gradient background</div>
@@ -94,7 +94,7 @@
 ---
 
 ### Test 4: HTML Structure with Comments
-**Date**: [Current Date]
+**Date**: May 24, 2025
 **Input Code**:
 ```html
 <!-- This is a test comment -->
@@ -128,7 +128,7 @@
 ---
 
 ### Test 5: Modern CSS (Flexbox)
-**Date**: [Current Date]
+**Date**: May 24, 2025
 **Input Code**:
 ```html
 <div style="display: flex; justify-content: space-between; background: lightsteelblue; padding: 15px; margin: 5px;">
@@ -161,29 +161,29 @@
 ## Summary of Findings
 
 ### CSS Property Normalization Patterns
-- **Font-weight**: [Pattern to be identified]
-- **Colors**: [Pattern to be identified]
-- **Complex properties**: [Pattern to be identified]
+- **Font-weight**: Only `700` converts to `bold`, other numeric values (600, 800, 900) remain unchanged
+- **Colors**: RGB values `rgb(255, 0, 0)` automatically convert to hex format `#ff0000`, keywords and hex values remain unchanged
+- **Complex properties**: Advanced CSS3 (gradients, shadows, border-radius) are preserved but may cause layout issues due to HTML restructuring
 
 ### HTML Structure Changes
-- **Comments**: [Preserved/Stripped/Modified]
-- **Whitespace**: [Preserved/Stripped/Modified]
-- **Nesting**: [Any changes to structure]
+- **Comments**: PRESERVED - HTML comments survive sanitization but may be moved to different lines
+- **Whitespace**: MODIFIED - Indentation and spacing are consistently reorganized, breaking layout dependencies
+- **Nesting**: PRESERVED - Element nesting structure remains intact, but formatting changes affect visual rendering
 
 ### Modern CSS Support
-- **Flexbox**: [Supported/Modified/Stripped]
-- **Gradients**: [Supported/Modified/Stripped]
-- **Shadows**: [Supported/Modified/Stripped]
+- **Flexbox**: BROKEN - CSS properties preserved but layout fails after save due to HTML restructuring
+- **Gradients**: SUPPORTED - Linear gradients work perfectly and are preserved through sanitization
+- **Shadows**: SUPPORTED - Box shadows with rgba values are fully preserved and functional
 
 ### Critical Issues Identified
-1. [Issue 1 - describe impact]
-2. [Issue 2 - describe impact]
-3. [Issue 3 - describe impact]
+1. **HTML Reformatting Breaks Layouts** - Moodle reorganizes HTML structure, causing spacing and alignment issues even with preserved CSS
+2. **Preview vs Reality Gap** - Complex layouts appear perfect in preview but break after saving due to sanitization
+3. **Whitespace Dependency** - Professional layouts that depend on precise HTML formatting are not viable in Moodle
 
 ### Recommendations for Sanitization-Safe Code
-1. [Recommendation 1]
-2. [Recommendation 2]
-3. [Recommendation 3]
+1. **Use Table-Based Layouts** - HTML tables are immune to whitespace sanitization and maintain structural integrity
+2. **Avoid Layout-Dependent CSS** - Don't rely on flexbox, grid, or complex positioning that depends on precise HTML formatting
+3. **Test Save/Reload Cycles** - Always test content after saving to verify layout survives Moodle's sanitization process
 
 ## Next Steps
 - [ ] Complete all 5 critical tests
