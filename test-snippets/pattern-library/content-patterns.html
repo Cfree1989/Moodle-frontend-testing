@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodle Content Patterns - Production Ready</title>
+</head>
+<body>
+    <!-- 
+    MOODLE CONTENT PATTERNS - PRODUCTION READY
+    Phase 2 Pattern Library - Content Components
+    All patterns tested and verified to work in Moodle
+    Copy and paste directly into Moodle's HTML editor
+    -->
+
+    <!-- PATTERN 1: Information Boxes (Success, Warning, Info, Error) -->
+    <h2>Pattern 1: Information Boxes</h2>
+    
+    <!-- Success/Info Box -->
+    <div style="background: linear-gradient(145deg, #ecfdf5 0%, #d1fae5 100%); border-left: 4px solid #10b981; border-radius: 8px; padding: 20px; margin: 15px 0; box-shadow: 0px 2px 8px rgba(16, 185, 129, 0.1);">
+      <h4 style="font-size: 18px; font-weight: bold; color: #065f46; margin: 0 0 10px 0;">💡 Pro Tip</h4>
+      <p style="font-size: 16px; margin: 0; line-height: 1.6; color: #047857;">This is important information that will help students succeed. Use this pattern for tips, best practices, or key insights that enhance learning.</p>
+    </div>
+
+    <!-- Warning Box -->
+    <div style="background: linear-gradient(145deg, #fffbeb 0%, #fef3c7 100%); border-left: 4px solid #f59e0b; border-radius: 8px; padding: 20px; margin: 15px 0; box-shadow: 0px 2px 8px rgba(245, 158, 11, 0.1);">
+      <h4 style="font-size: 18px; font-weight: bold; color: #92400e; margin: 0 0 10px 0;">⚠️ Important Notice</h4>
+      <p style="font-size: 16px; margin: 0; line-height: 1.6; color: #b45309;">Use this style for warnings, deadlines, or information that requires immediate attention from students.</p>
+    </div>
+
+    <!-- Info Box -->
+    <div style="background: linear-gradient(145deg, #eff6ff 0%, #dbeafe 100%); border-left: 4px solid #3b82f6; border-radius: 8px; padding: 20px; margin: 15px 0; box-shadow: 0px 2px 8px rgba(59, 130, 246, 0.1);">
+      <h4 style="font-size: 18px; font-weight: bold; color: #1e40af; margin: 0 0 10px 0;">ℹ️ Information</h4>
+      <p style="font-size: 16px; margin: 0; line-height: 1.6; color: #1d4ed8;">General information, course updates, or helpful context that students should be aware of.</p>
+    </div>
+
+    <!-- Error/Alert Box -->
+    <div style="background: linear-gradient(145deg, #fef2f2 0%, #fecaca 100%); border-left: 4px solid #ef4444; border-radius: 8px; padding: 20px; margin: 15px 0; box-shadow: 0px 2px 8px rgba(239, 68, 68, 0.1);">
+      <h4 style="font-size: 18px; font-weight: bold; color: #991b1b; margin: 0 0 10px 0;">🚨 Alert</h4>
+      <p style="font-size: 16px; margin: 0; line-height: 1.6; color: #dc2626;">Critical information, urgent updates, or important corrections that require immediate attention.</p>
+    </div>
+
+    <hr style="margin: 40px 0;">
+
+    <!-- PATTERN 2: Call-to-Action Buttons -->
+    <h2>Pattern 2: Call-to-Action Buttons</h2>
+    
+    <div style="text-align: center; margin: 20px 0;">
+        <!-- Primary Button -->
+        <a style="display: inline-block; padding: 15px 30px; background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; box-shadow: 0px 4px 15px rgba(59, 130, 246, 0.3); margin: 5px;" href="#your-link">Primary Action</a>
+
+        <!-- Secondary Button -->
+        <a style="display: inline-block; padding: 12px 24px; background: transparent; color: #3b82f6; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 14px; border: 2px solid #3b82f6; margin: 5px;" href="#your-link">Secondary Action</a>
+
+        <!-- Success Button -->
+        <a style="display: inline-block; padding: 15px 30px; background: linear-gradient(135deg, #10b981, #059669); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; box-shadow: 0px 4px 15px rgba(16, 185, 129, 0.3); margin: 5px;" href="#your-link">Submit Assignment</a>
+
+        <!-- Warning Button -->
+        <a style="display: inline-block; padding: 15px 30px; background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; box-shadow: 0px 4px 15px rgba(245, 158, 11, 0.3); margin: 5px;" href="#your-link">Important Link</a>
+
+        <!-- Danger Button -->
+        <a style="display: inline-block; padding: 15px 30px; background: linear-gradient(135deg, #ef4444, #dc2626); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; box-shadow: 0px 4px 15px rgba(239, 68, 68, 0.3); margin: 5px;" href="#your-link">Critical Action</a>
+    </div>
+
+    <hr style="margin: 40px 0;">
+
+    <!-- PATTERN 3: Resource Cards -->
+    <h2>Pattern 3: Resource Cards</h2>
+    
+    <!-- Resource Card 1 -->
+    <div style="background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 16px; box-shadow: 0px 6px 20px rgba(0,0,0,0.08); border: 1px solid rgba(255,255,255,0.8); padding: 25px; margin-bottom: 20px;">
+      <h3 style="font-size: 21px; font-weight: bold; color: #1f2937; margin: 0 0 15px 0;">🔧 Software Tools</h3>
+      <p style="font-size: 16px; margin: 0 0 8px 0; line-height: 1.6; color: #4b5563;"><strong style="color: #059669;">✓ Free for Students</strong></p>
+      <p style="font-size: 16px; margin: 0 0 8px 0; line-height: 1.6; color: #4b5563;">📞 <strong>Support:</strong> (225) 578-3375</p>
+      <p style="font-size: 16px; margin: 0 0 15px 0; line-height: 1.6; color: #4b5563;">🕒 <strong>Available:</strong> 24/7 online access</p>
+      <a style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 14px; box-shadow: 0px 3px 10px rgba(59, 130, 246, 0.3);" href="#software">Access Software</a>
+    </div>
+
+    <!-- Resource Card 2 -->
+    <div style="background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 16px; box-shadow: 0px 6px 20px rgba(0,0,0,0.08); border: 1px solid rgba(255,255,255,0.8); padding: 25px; margin-bottom: 20px;">
+      <h3 style="font-size: 21px; font-weight: bold; color: #1f2937; margin: 0 0 15px 0;">📚 Library Resources</h3>
+      <p style="font-size: 16px; margin: 0 0 8px 0; line-height: 1.6; color: #4b5563;"><strong style="color: #059669;">✓ Digital Access</strong></p>
+      <p style="font-size: 16px; margin: 0 0 8px 0; line-height: 1.6; color: #4b5563;">📍 <strong>Location:</strong> Middleton Library, 3rd Floor</p>
+      <p style="font-size: 16px; margin: 0 0 15px 0; line-height: 1.6; color: #4b5563;">🕒 <strong>Hours:</strong> Mon – Thu 7:30am - 1:00am</p>
+      <a style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #10b981, #059669); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 14px; box-shadow: 0px 3px 10px rgba(16, 185, 129, 0.3);" href="#library">Visit Library</a>
+    </div>
+
+    <hr style="margin: 40px 0;">
+
+    <!-- PATTERN 4: Contact Information Cards -->
+    <h2>Pattern 4: Contact Information</h2>
+    
+    <table style="width: 100%; border-collapse: separate; border-spacing: 20px;">
+      <tr>
+        <td style="width: 50%; vertical-align: top; background: linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 12px; padding: 20px; box-shadow: 0px 4px 15px rgba(59, 130, 246, 0.1);">
+          <h4 style="font-size: 18px; font-weight: bold; color: #1e40af; margin: 0 0 15px 0;">👨‍🏫 Instructor</h4>
+          <p style="font-size: 16px; margin: 0 0 5px 0; color: #1d4ed8;"><strong>Dr. John Smith</strong></p>
+          <p style="font-size: 14px; margin: 0 0 5px 0; color: #3730a3;">📧 jsmith@lsu.edu</p>
+          <p style="font-size: 14px; margin: 0 0 5px 0; color: #3730a3;">📞 (225) 578-1234</p>
+          <p style="font-size: 14px; margin: 0 0 10px 0; color: #3730a3;">🏢 Office: Design Building 123</p>
+          <p style="font-size: 14px; margin: 0; color: #3730a3;">🕒 Office Hours: Tue/Thu 2-4pm</p>
+        </td>
+        <td style="width: 50%; vertical-align: top; background: linear-gradient(145deg, #f0fdf4 0%, #dcfce7 100%); border-radius: 12px; padding: 20px; box-shadow: 0px 4px 15px rgba(16, 185, 129, 0.1);">
+          <h4 style="font-size: 18px; font-weight: bold; color: #166534; margin: 0 0 15px 0;">🎓 Teaching Assistant</h4>
+          <p style="font-size: 16px; margin: 0 0 5px 0; color: #15803d;"><strong>Jane Doe</strong></p>
+          <p style="font-size: 14px; margin: 0 0 5px 0; color: #166534;">📧 jdoe1@lsu.edu</p>
+          <p style="font-size: 14px; margin: 0 0 5px 0; color: #166534;">📞 (225) 578-5678</p>
+          <p style="font-size: 14px; margin: 0 0 10px 0; color: #166534;">🏢 Office: Design Building 456</p>
+          <p style="font-size: 14px; margin: 0; color: #166534;">🕒 Office Hours: Mon/Wed 1-3pm</p>
+        </td>
+      </tr>
+    </table>
+
+    <hr style="margin: 40px 0;">
+
+    <!-- PATTERN 5: Lists and Navigation -->
+    <h2>Pattern 5: Styled Lists</h2>
+    
+    <!-- Checklist Style -->
+    <div style="background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 12px; padding: 25px; margin: 20px 0; box-shadow: 0px 4px 15px rgba(0,0,0,0.06);">
+      <h3 style="font-size: 20px; font-weight: bold; color: #1f2937; margin: 0 0 20px 0;">📋 Assignment Checklist</h3>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <li style="margin-bottom: 10px; padding: 8px 0; border-bottom: 1px solid #e5e7eb;">
+          <span style="color: #10b981; font-weight: bold; margin-right: 10px;">✓</span>
+          <span style="color: #374151;">Read Chapter 5 (pages 120-145)</span>
+        </li>
+        <li style="margin-bottom: 10px; padding: 8px 0; border-bottom: 1px solid #e5e7eb;">
+          <span style="color: #10b981; font-weight: bold; margin-right: 10px;">✓</span>
+          <span style="color: #374151;">Complete practice exercises 1-10</span>
+        </li>
+        <li style="margin-bottom: 10px; padding: 8px 0; border-bottom: 1px solid #e5e7eb;">
+          <span style="color: #f59e0b; font-weight: bold; margin-right: 10px;">⏳</span>
+          <span style="color: #374151;">Submit reflection paper (Due Friday)</span>
+        </li>
+        <li style="margin-bottom: 10px; padding: 8px 0;">
+          <span style="color: #6b7280; font-weight: bold; margin-right: 10px;">○</span>
+          <span style="color: #6b7280;">Prepare for next week's quiz</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Navigation Links -->
+    <div style="background: linear-gradient(145deg, #f8fafc 0%, #e2e8f0 100%); border-radius: 12px; padding: 25px; margin: 20px 0; box-shadow: 0px 4px 15px rgba(0,0,0,0.06);">
+      <h3 style="font-size: 20px; font-weight: bold; color: #1f2937; margin: 0 0 20px 0;">🔗 Quick Links</h3>
+      <nav>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 12px;">
+            <a style="display: block; padding: 12px 16px; background: white; color: #3b82f6; text-decoration: none; border-radius: 8px; font-weight: 500; border-left: 4px solid #3b82f6; box-shadow: 0px 2px 4px rgba(0,0,0,0.05);" href="#syllabus">📄 Course Syllabus</a>
+          </li>
+          <li style="margin-bottom: 12px;">
+            <a style="display: block; padding: 12px 16px; background: white; color: #10b981; text-decoration: none; border-radius: 8px; font-weight: 500; border-left: 4px solid #10b981; box-shadow: 0px 2px 4px rgba(0,0,0,0.05);" href="#calendar">📅 Course Calendar</a>
+          </li>
+          <li style="margin-bottom: 12px;">
+            <a style="display: block; padding: 12px 16px; background: white; color: #f59e0b; text-decoration: none; border-radius: 8px; font-weight: 500; border-left: 4px solid #f59e0b; box-shadow: 0px 2px 4px rgba(0,0,0,0.05);" href="#grades">📊 Gradebook</a>
+          </li>
+          <li>
+            <a style="display: block; padding: 12px 16px; background: white; color: #8b5cf6; text-decoration: none; border-radius: 8px; font-weight: 500; border-left: 4px solid #8b5cf6; box-shadow: 0px 2px 4px rgba(0,0,0,0.05);" href="#discussions">💬 Discussions</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <hr style="margin: 40px 0;">
+
+    <!-- PATTERN 6: Progress Indicators -->
+    <h2>Pattern 6: Progress Indicators</h2>
+    
+    <!-- Progress Bar -->
+    <div style="background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 12px; padding: 25px; margin: 20px 0; box-shadow: 0px 4px 15px rgba(0,0,0,0.06);">
+      <h3 style="font-size: 18px; font-weight: bold; color: #1f2937; margin: 0 0 15px 0;">📈 Course Progress</h3>
+      <div style="background: #e5e7eb; border-radius: 10px; height: 20px; margin-bottom: 10px; overflow: hidden;">
+        <div style="background: linear-gradient(135deg, #10b981, #059669); height: 100%; width: 65%; border-radius: 10px; position: relative;">
+          <span style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: white; font-size: 12px; font-weight: bold;">65%</span>
+        </div>
+      </div>
+      <p style="font-size: 14px; margin: 0; color: #6b7280;">13 of 20 modules completed</p>
+    </div>
+
+    <!-- Status Badges -->
+    <div style="background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 12px; padding: 25px; margin: 20px 0; box-shadow: 0px 4px 15px rgba(0,0,0,0.06);">
+      <h3 style="font-size: 18px; font-weight: bold; color: #1f2937; margin: 0 0 15px 0;">📋 Assignment Status</h3>
+      <div style="margin-bottom: 10px;">
+        <span style="display: inline-block; padding: 4px 12px; background: #dcfce7; color: #166534; border-radius: 20px; font-size: 12px; font-weight: bold; margin-right: 8px;">✓ Completed</span>
+        <span style="color: #374151;">Assignment 1: Research Paper</span>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <span style="display: inline-block; padding: 4px 12px; background: #fef3c7; color: #92400e; border-radius: 20px; font-size: 12px; font-weight: bold; margin-right: 8px;">⏳ In Progress</span>
+        <span style="color: #374151;">Assignment 2: Group Project</span>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <span style="display: inline-block; padding: 4px 12px; background: #fee2e2; color: #991b1b; border-radius: 20px; font-size: 12px; font-weight: bold; margin-right: 8px;">⚠️ Overdue</span>
+        <span style="color: #374151;">Assignment 3: Lab Report</span>
+      </div>
+      <div>
+        <span style="display: inline-block; padding: 4px 12px; background: #e5e7eb; color: #6b7280; border-radius: 20px; font-size: 12px; font-weight: bold; margin-right: 8px;">○ Not Started</span>
+        <span style="color: #374151;">Assignment 4: Final Presentation</span>
+      </div>
+    </div>
+
+    <!-- Usage Instructions -->
+    <div style="margin-top: 50px; padding: 20px; background: #f8fafc; border-radius: 8px; border-left: 4px solid #3b82f6;">
+        <h3 style="color: #1f2937; margin: 0 0 10px 0;">Usage Instructions</h3>
+        <ol style="color: #4b5563; line-height: 1.6;">
+            <li>Copy the HTML code for any pattern above</li>
+            <li>Paste it into Moodle's HTML editor (source view)</li>
+            <li>Customize the text, colors, and links as needed</li>
+            <li>Test save/reload to ensure pattern survives sanitization</li>
+            <li>All patterns use inline CSS and are Moodle-safe</li>
+        </ol>
+    </div>
+
+</body>
+</html> 

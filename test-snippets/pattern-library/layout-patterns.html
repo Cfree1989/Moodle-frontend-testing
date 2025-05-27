@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodle Layout Patterns - Production Ready</title>
+</head>
+<body>
+    <!-- 
+    MOODLE LAYOUT PATTERNS - PRODUCTION READY
+    Phase 2 Pattern Library - Extracted from Phase 1 Success Results
+    All patterns are table-based and immune to Moodle sanitization
+    Copy and paste directly into Moodle's HTML editor
+    -->
+
+    <!-- PATTERN 1: Two-Column Layout (60/40 Split) -->
+    <h2>Pattern 1: Two-Column Layout</h2>
+    <table style="width: 100%; border-collapse: separate; border-spacing: 20px;">
+      <tr>
+        <td style="width: 60%; vertical-align: top; background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 16px; box-shadow: 0px 6px 20px rgba(0,0,0,0.08); padding: 25px;">
+          <h3 style="font-size: 21px; font-weight: bold; color: #1f2937; margin: 0 0 15px 0;">Main Content</h3>
+          <p style="font-size: 16px; margin: 0; line-height: 1.6; color: #4b5563;">Your primary content goes here. This column takes up 60% of the available width and provides space for detailed information, course materials, or main lesson content.</p>
+        </td>
+        <td style="width: 40%; vertical-align: top; background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 16px; box-shadow: 0px 6px 20px rgba(0,0,0,0.08); padding: 25px;">
+          <h3 style="font-size: 21px; font-weight: bold; color: #1f2937; margin: 0 0 15px 0;">Sidebar</h3>
+          <p style="font-size: 16px; margin: 0; line-height: 1.6; color: #4b5563;">Secondary content, links, resources, or supplementary information goes in this 40% width column.</p>
+        </td>
+      </tr>
+    </table>
+
+    <hr style="margin: 40px 0;">
+
+    <!-- PATTERN 2: Three-Column Layout (Equal Width) -->
+    <h2>Pattern 2: Three-Column Layout</h2>
+    <table style="width: 100%; border-collapse: separate; border-spacing: 15px;">
+      <tr>
+        <td style="width: 33.33%; vertical-align: top; background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 12px; box-shadow: 0px 4px 15px rgba(0,0,0,0.06); padding: 20px; text-align: center;">
+          <div style="font-size: 32px; margin-bottom: 10px;">🎯</div>
+          <h4 style="font-size: 18px; font-weight: bold; color: #1f2937; margin: 0 0 10px 0;">Learning Objectives</h4>
+          <p style="font-size: 14px; margin: 0; line-height: 1.5; color: #6b7280;">Clear goals and outcomes for this course module or lesson.</p>
+        </td>
+        <td style="width: 33.33%; vertical-align: top; background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 12px; box-shadow: 0px 4px 15px rgba(0,0,0,0.06); padding: 20px; text-align: center;">
+          <div style="font-size: 32px; margin-bottom: 10px;">⚡</div>
+          <h4 style="font-size: 18px; font-weight: bold; color: #1f2937; margin: 0 0 10px 0;">Quick Actions</h4>
+          <p style="font-size: 14px; margin: 0; line-height: 1.5; color: #6b7280;">Important links, assignments, or tools students need to access.</p>
+        </td>
+        <td style="width: 33.33%; vertical-align: top; background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 12px; box-shadow: 0px 4px 15px rgba(0,0,0,0.06); padding: 20px; text-align: center;">
+          <div style="font-size: 32px; margin-bottom: 10px;">🚀</div>
+          <h4 style="font-size: 18px; font-weight: bold; color: #1f2937; margin: 0 0 10px 0;">Resources</h4>
+          <p style="font-size: 14px; margin: 0; line-height: 1.5; color: #6b7280;">Additional materials, readings, or supplementary content.</p>
+        </td>
+      </tr>
+    </table>
+
+    <hr style="margin: 40px 0;">
+
+    <!-- PATTERN 3: Card Grid Layout (2x2) -->
+    <h2>Pattern 3: Card Grid Layout</h2>
+    <table style="width: 100%; border-collapse: separate; border-spacing: 20px;">
+      <tr>
+        <td style="width: 50%; vertical-align: top; background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 16px; box-shadow: 0px 6px 20px rgba(0,0,0,0.08); border: 1px solid rgba(255,255,255,0.8); padding: 25px;">
+          <h3 style="font-size: 21px; font-weight: bold; color: #1f2937; margin: 0 0 15px 0;">📚 Course Materials</h3>
+          <p style="font-size: 16px; margin: 0 0 15px 0; line-height: 1.6; color: #4b5563;">Access textbooks, readings, and essential course materials. All resources are organized by week and topic.</p>
+          <a style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 14px; box-shadow: 0px 3px 10px rgba(59, 130, 246, 0.3);" href="#materials">View Materials</a>
+        </td>
+        <td style="width: 50%; vertical-align: top; background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 16px; box-shadow: 0px 6px 20px rgba(0,0,0,0.08); border: 1px solid rgba(255,255,255,0.8); padding: 25px;">
+          <h3 style="font-size: 21px; font-weight: bold; color: #1f2937; margin: 0 0 15px 0;">🎥 Video Lectures</h3>
+          <p style="font-size: 16px; margin: 0 0 15px 0; line-height: 1.6; color: #4b5563;">Watch recorded lectures and demonstrations. Videos include captions and downloadable transcripts.</p>
+          <a style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #10b981, #059669); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 14px; box-shadow: 0px 3px 10px rgba(16, 185, 129, 0.3);" href="#videos">Watch Videos</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="width: 50%; vertical-align: top; background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 16px; box-shadow: 0px 6px 20px rgba(0,0,0,0.08); border: 1px solid rgba(255,255,255,0.8); padding: 25px;">
+          <h3 style="font-size: 21px; font-weight: bold; color: #1f2937; margin: 0 0 15px 0;">📝 Assignments</h3>
+          <p style="font-size: 16px; margin: 0 0 15px 0; line-height: 1.6; color: #4b5563;">Submit homework, projects, and assessments. Check due dates and grading rubrics.</p>
+          <a style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 14px; box-shadow: 0px 3px 10px rgba(245, 158, 11, 0.3);" href="#assignments">View Assignments</a>
+        </td>
+        <td style="width: 50%; vertical-align: top; background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); border-radius: 16px; box-shadow: 0px 6px 20px rgba(0,0,0,0.08); border: 1px solid rgba(255,255,255,0.8); padding: 25px;">
+          <h3 style="font-size: 21px; font-weight: bold; color: #1f2937; margin: 0 0 15px 0;">💬 Discussions</h3>
+          <p style="font-size: 16px; margin: 0 0 15px 0; line-height: 1.6; color: #4b5563;">Participate in class discussions and peer interactions. Share ideas and ask questions.</p>
+          <a style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 14px; box-shadow: 0px 3px 10px rgba(139, 92, 246, 0.3);" href="#discussions">Join Discussion</a>
+        </td>
+      </tr>
+    </table>
+
+    <hr style="margin: 40px 0;">
+
+    <!-- PATTERN 4: Hero Section -->
+    <h2>Pattern 4: Hero Section</h2>
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr>
+        <td style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px 20px; text-align: center; border-radius: 20px; box-shadow: 0px 8px 25px rgba(102, 126, 234, 0.3);">
+          <h1 style="font-size: 42px; font-weight: bold; color: #ffffff; margin: 0 0 10px 0; text-shadow: 0px 2px 4px rgba(0,0,0,0.3); letter-spacing: 1px;">Welcome to Course Name</h1>
+          <p style="font-size: 18px; color: rgba(255,255,255,0.9); margin: 0 0 20px 0; font-weight: 300;">Engaging subtitle or course description that captures attention and sets expectations</p>
+          <a style="display: inline-block; padding: 15px 30px; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 30px; font-size: 16px; font-weight: bold; border: 2px solid rgba(255,255,255,0.3); backdrop-filter: blur(10px);" href="#get-started">Get Started</a>
+        </td>
+      </tr>
+    </table>
+
+    <hr style="margin: 40px 0;">
+
+    <!-- PATTERN 5: Content Section with Image -->
+    <h2>Pattern 5: Content Section with Image</h2>
+    <table style="width: 100%; border-collapse: separate; border-spacing: 25px;">
+      <tr>
+        <td style="width: 40%; vertical-align: top;">
+          <img style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0px 6px 20px rgba(0,0,0,0.1);" src="https://via.placeholder.com/400x300/667eea/ffffff?text=Course+Image" alt="Course Content">
+        </td>
+        <td style="width: 60%; vertical-align: top; background: linear-gradient(145deg, #f8fafc 0%, #e2e8f0 100%); border-radius: 16px; padding: 30px; box-shadow: 0px 6px 20px rgba(0,0,0,0.08);">
+          <h2 style="font-size: 28px; font-weight: bold; color: #1f2937; margin: 0 0 20px 0;">About This Course</h2>
+          <p style="font-size: 16px; margin: 0 0 15px 0; line-height: 1.6; color: #4b5563;">This course provides comprehensive coverage of essential topics with hands-on learning experiences. Students will develop practical skills through projects and real-world applications.</p>
+          <p style="font-size: 16px; margin: 0 0 20px 0; line-height: 1.6; color: #4b5563;">Key features include interactive content, multimedia resources, and collaborative learning opportunities designed to enhance understanding and retention.</p>
+          <a style="display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 14px; box-shadow: 0px 3px 10px rgba(59, 130, 246, 0.3);" href="#learn-more">Learn More</a>
+        </td>
+      </tr>
+    </table>
+
+    <hr style="margin: 40px 0;">
+
+    <!-- PATTERN 6: Announcement Banner -->
+    <h2>Pattern 6: Announcement Banner</h2>
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr>
+        <td style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); padding: 20px 30px; border-radius: 12px; box-shadow: 0px 4px 15px rgba(251, 191, 36, 0.3); border-left: 5px solid #d97706;">
+          <div style="display: flex; align-items: center;">
+            <div style="font-size: 24px; margin-right: 15px;">📢</div>
+            <div>
+              <h3 style="font-size: 20px; font-weight: bold; color: #92400e; margin: 0 0 5px 0;">Important Announcement</h3>
+              <p style="font-size: 16px; margin: 0; line-height: 1.5; color: #b45309;">Class schedule has been updated. Please check the new meeting times and locations in your course calendar.</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Usage Instructions -->
+    <div style="margin-top: 50px; padding: 20px; background: #f8fafc; border-radius: 8px; border-left: 4px solid #3b82f6;">
+        <h3 style="color: #1f2937; margin: 0 0 10px 0;">Usage Instructions</h3>
+        <ol style="color: #4b5563; line-height: 1.6;">
+            <li>Copy the HTML code for any pattern above</li>
+            <li>Paste it into Moodle's HTML editor (source view)</li>
+            <li>Customize the text, links, and colors as needed</li>
+            <li>Save and test to ensure the pattern survives Moodle's sanitization</li>
+            <li>All patterns are table-based and immune to HTML reformatting</li>
+        </ol>
+    </div>
+
+</body>
+</html> 
