@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodle Bootstrap Integration</title>
+</head>
+<body>
+    <!-- MOODLE-SPECIFIC: Bootstrap Framework Integration -->
+    <!-- These patterns leverage Moodle's built-in Bootstrap support -->
+    
+    <!-- Pattern 1: Basic Bootstrap Grid -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 15px;">
+                    <h4 style="margin: 0 0 10px 0;">Column 1</h4>
+                    <p style="margin: 0;">Content for first column using Bootstrap grid.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div style="background: #e9ecef; padding: 20px; border-radius: 8px; margin-bottom: 15px;">
+                    <h4 style="margin: 0 0 10px 0;">Column 2</h4>
+                    <p style="margin: 0;">Content for second column using Bootstrap grid.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pattern 2: Three-Column Bootstrap Layout -->
+    <div class="container" style="margin-top: 30px;">
+        <div class="row">
+            <div class="col-sm-4">
+                <div style="background: #d1ecf1; padding: 15px; border-radius: 6px; text-align: center;">
+                    <h5 style="margin: 0 0 8px 0;">Feature A</h5>
+                    <p style="margin: 0; font-size: 14px;">Bootstrap column 1</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div style="background: #d4edda; padding: 15px; border-radius: 6px; text-align: center;">
+                    <h5 style="margin: 0 0 8px 0;">Feature B</h5>
+                    <p style="margin: 0; font-size: 14px;">Bootstrap column 2</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div style="background: #fff3cd; padding: 15px; border-radius: 6px; text-align: center;">
+                    <h5 style="margin: 0 0 8px 0;">Feature C</h5>
+                    <p style="margin: 0; font-size: 14px;">Bootstrap column 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pattern 3: Responsive Bootstrap Layout -->
+    <div class="container" style="margin-top: 30px;">
+        <div class="row">
+            <div class="col-md-8">
+                <div style="background: #ffffff; border: 1px solid #dee2e6; border-radius: 8px; padding: 20px;">
+                    <h3 style="margin: 0 0 15px 0;">Main Content Area</h3>
+                    <p style="margin: 0 0 15px 0;">This is the main content area using Bootstrap's responsive grid. It will stack on mobile devices.</p>
+                    <p style="margin: 0;">Bootstrap classes work within Moodle's environment, providing responsive layout capabilities.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="background: #f8f9fa; border-radius: 8px; padding: 20px;">
+                    <h4 style="margin: 0 0 15px 0;">Sidebar</h4>
+                    <ul style="margin: 0; padding-left: 20px;">
+                        <li style="margin-bottom: 8px;">Resource 1</li>
+                        <li style="margin-bottom: 8px;">Resource 2</li>
+                        <li style="margin-bottom: 8px;">Resource 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Note: Bootstrap classes are preserved by Moodle -->
+    <!-- Combine with inline styles for enhanced visual design -->
+    
+</body>
+</html> 
