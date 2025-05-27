@@ -14,8 +14,8 @@
 - **`PROJECT-INDEX.md`** - This file - comprehensive navigation guide
 
 #### Phase 1 Results (Active Reference)
+- **`results/moodle-comprehensive-guide.md`** - 🚀 **THE DEFINITIVE RESOURCE** - Complete guide combining reference and patterns
 - **`results/test-log.md`** - Complete testing results (32 tests, 62.5% success rate)
-- **`results/reference-guide.md`** - Instructor reference guide with working patterns
 - **`results/screenshots/`** - Visual documentation of test results
 
 #### Test Files and Patterns
@@ -79,13 +79,13 @@
 
 ### For Phase 2 Development
 1. **Current Progress**: Check `.cursor/scratchpad.md`
-2. **Phase 1 Reference**: Use `results/reference-guide.md`
+2. **Complete Reference**: Use `results/moodle-comprehensive-guide.md`
 3. **Test Patterns**: Browse `test-snippets/` by category
 4. **Proven Layouts**: See `tests/moodle-safe-layout.html`
 
 ### For Instructors/Course Builders
 1. **Quick Start**: Read `README.md`
-2. **Working Patterns**: Use `results/reference-guide.md`
+2. **Complete Guide**: Use `results/moodle-comprehensive-guide.md` - **THE DEFINITIVE RESOURCE**
 3. **Copy-Paste Code**: Browse `test-snippets/moodle-specific/`
 4. **Visual Examples**: Check `results/screenshots/`
 
@@ -101,7 +101,7 @@
 
 ### Documentation Chain
 ```
-README.md → .cursor/scratchpad.md → results/reference-guide.md → results/test-log.md
+README.md → .cursor/scratchpad.md → results/moodle-comprehensive-guide.md → results/test-log.md
 ```
 
 ### Test Development Chain

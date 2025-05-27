@@ -136,10 +136,10 @@
 **Repository**: Moodle Front-End Coding Discovery Project  
 
 **Key Resources**:
+- **Complete Moodle Front-End Guide**: `results/moodle-comprehensive-guide.md` - 🚀 **THE DEFINITIVE RESOURCE**
 - Phase 1 Complete Results: `phase1-archive/FINAL-REPORT.md`
 - Current Progress: `.cursor/scratchpad.md`
 - Proven Patterns: `tests/` and `results/` directories
-- Reference Guide: `results/reference-guide.md`
 
 ---
 
